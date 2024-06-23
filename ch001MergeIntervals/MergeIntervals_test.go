@@ -8,19 +8,19 @@ import (
 func TestSolutionMerge(t *testing.T) {
 	s := solution{}
 	testCases := []struct {
-		input, output []interval
+		input, output []Interval
 	}{
 		{
-			input:  []interval{{1, 4}, {2, 5}, {7, 9}},
-			output: []interval{{1, 4}, {7, 9}},
+			input:  []Interval{{1, 4}, {2, 5}, {7, 9}},
+			output: []Interval{{1, 5}, {7, 9}},
 		},
 		{
-			input:  []interval{{6, 7}, {2, 4}, {5, 9}},
-			output: []interval{{2, 4}, {5, 9}},
+			input:  []Interval{{6, 7}, {2, 4}, {5, 9}},
+			output: []Interval{{2, 4}, {5, 9}},
 		},
 		{
-			input:  []interval{{1, 4}, {2, 6}, {3, 5}},
-			output: []interval{{1, 6}},
+			input:  []Interval{{1, 4}, {2, 6}, {3, 5}},
+			output: []Interval{{1, 6}},
 		},
 	}
 
