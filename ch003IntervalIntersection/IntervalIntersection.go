@@ -19,7 +19,7 @@ func (s *solution) merge(arr1, arr2 []Interval) []Interval {
 		if intersectionInterval.End >= intersectionInterval.Start {
 			merged = append(merged, intersectionInterval)
 		}
-		if arr1[i].Start < arr2[j].Start || arr1[i].End < arr2[j].End {
+		if intersectionInterval.End < intersectionInterval.Start && arr1[i].Start < arr2[j].Start || arr1[i].End < arr2[j].End {
 			i++
 		} else {
 			j++
