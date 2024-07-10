@@ -54,3 +54,17 @@ func (s *solution) insert(intervals []Interval, newInterval Interval) []Interval
 	}
 	return merged
 }
+
+func min(val1, val2 int) int {
+	if val1 > val2 {
+		return val2
+	}
+	return val1
+}
+
+func max(val1, val2 int) int {
+	if val1 > val2 {
+		return val1
+	}
+	return val2
+}
