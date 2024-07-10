@@ -1,4 +1,4 @@
-# Intervals Intersection (Medium)
+# Intervals Intersection 
 
 ## Problem Statement
 
